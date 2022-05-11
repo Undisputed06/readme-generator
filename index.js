@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
+const generateMarkdown = require('./Develop/utils/generateMarkdown')
 // TODO: Create an array of questions for user input
 const questions = [
     { 
@@ -63,47 +64,49 @@ const questions = [
         message: 'Please enter a license for your application',
         choices: ['N/A', 'MIT', 'ISC', 'Apache license 2.0', 'Academic Free License v3.0', 'Boost Software License 1.0']
       },
+      {
+        type: 'input',
+        name: 'github',
+        message: 'Enter your GitHub Username (Required)',
+        validate: githubInput => {
+          if (githubInput) {
+            return true;
+          } else {
+            console.log('Please enter your GitHub username!');
+            return false;
+          }
+        }
+      },
+      {
+        type: 'input',
+        name: 'email',
+        message: 'Enter your your email (Required)',
+        validate: githubInput => {
+          if (githubInput) {
+            return true;
+          } else {
+            console.log('Please enter your email!');
+            return false;
+          }
+        }
+      },
+
 ];
 
-const promptUser = () => {
-  return inquirer.prompt([
-
-    {
-      type: 'input',
-      name: 'github',
-      message: 'Enter your GitHub Username (Required)',
-      validate: githubInput => {
-        if (githubInput) {
-          return true;
-        } else {
-          console.log('Please enter your GitHub username!');
-          return false;
-        }
-      }
-    },
-    {
-      type: 'input',
-      name: 'email',
-      message: 'Enter your your email (Required)',
-      validate: githubInput => {
-        if (githubInput) {
-          return true;
-        } else {
-          console.log('Please enter your email!');
-          return false;
-        }
-      }
-    },
-
-  ]);
-};
 
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  inquirer.prompt(questions)
+  .then(answers =>{
+    console.log(answers);
+    return generateMarkdown(answers);
+  })
+  .then(promptUser)
+}
 
 // Function call to initialize app
 init();
