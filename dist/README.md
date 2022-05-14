@@ -1,8 +1,8 @@
 
-  # this
-  ![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)  
+  # Professional README Generator
+    
   ## Description
-  ths
+  This is a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.
 
   ## Table of Contents
   * [Installation](#installation)
@@ -14,38 +14,25 @@
 
   
   ## Installation
-  this
+  In order to install the application, first clone the github repo to your machine. If node.js isn't installed, install it on your machine. From your command line, run the command "npm install" in order to download the necessary packages. Finally, run "node index" .  At this point, you will presented with a series of prompts to answer. The generated READme file will be added to the dist folder.
 
   ## Usage 
-  this
+  User will be presented with a series of prompts to answer. The generated README will be added to the dist folder.
 
   ## License
-  ISC
+  N/A
 
   
-  ## License
-
-  Licensed under the ISC license;
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-  https://opensource.org/licenses/ISC
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
 
   ## Contributing
-  this
+  Please feel free to contribute to my project. To do so, fork the project to your local machine and create a pull request. 
 
   ## Tests
-  this
+  Run npm test
 
   ## Questions
-  [My Github Profile](https://github.com/this)
+  [My Github Profile](https://github.com/Undisputed06)
   
-  Please feel free to contact me at this
+  Please feel free to contact me at w_gwilliams@yahoo.com
 
 
