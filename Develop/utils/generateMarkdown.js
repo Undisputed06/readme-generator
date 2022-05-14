@@ -29,22 +29,59 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if (license === 'N/A'){
-    return '';
+
+  let link;
+  switch(license[0]){
+    case 'MIT':
+      link = "https://opensource.org/licenses/MIT)"
+      break;
+    case 'ISC':
+      link = "https://opensource.org/licenses/ISC"
+      break;
+    case 'Apache license 2.0':
+      link = "https://opensource.org/licenses/Apache-2.0"
+      break;
+    case 'Boost Software License 1.0':
+      link = "https://www.boost.org/LICENSE_1_0.txt)"
+      break;
+    default:
+      link = "";
+      break
+  }
+  return link; 
   }
   
-}
+
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if(license[0] === "N/A"){
+    return '';
+  }
+  return `
+  ## License
+
+  Licensed under the ${license} license;
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      ${renderLicenseLink(license)}
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.`
+
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   console.log(data)
   return `
   # ${data.title}
-  ${renderLicenseBadge(data.license)} 
+  ${renderLicenseBadge(data.license)}  
   ## Description
   ${data.description}
 
@@ -65,6 +102,8 @@ function generateMarkdown(data) {
 
   ## License
   ${data.license}
+
+  ${renderLicenseSection(data.license)}
 
   ## Contributing
   ${data.contribution}
