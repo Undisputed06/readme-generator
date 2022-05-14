@@ -6,6 +6,7 @@
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
+  * [Screenshot of README](#screenshot)
   * [License](#license)
   * [Contribute](#contributing)
   * [Tests](#tests)
@@ -19,11 +20,17 @@
   User will be presented with a series of prompts to answer. The generated README will be added to the dist folder.
 
  
-  ## Screenshot of README.md
+  ## Screenshot
 
   ![Screenshot of README](./Develop/utils/images/readme_screenshot.png)
 
+
   
+  [Link to Video Demo](https://drive.google.com/file/d/1-ogucTVRHJrZkT_GQ9oR3No8yLLuZxJz/view)
+
+  
+  [Link to README Example](./dist/README.md)
+
   ## Contributing
   Please feel free to contribute to my project. To do so, fork the project to your local machine and create a pull request. 
 
