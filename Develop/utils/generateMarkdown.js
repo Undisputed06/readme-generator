@@ -33,7 +33,7 @@ function renderLicenseLink(license) {
   let link;
   switch(license[0]){
     case 'MIT':
-      link = "https://opensource.org/licenses/MIT)"
+      link = "https://opensource.org/licenses/MIT"
       break;
     case 'ISC':
       link = "https://opensource.org/licenses/ISC"
@@ -42,7 +42,7 @@ function renderLicenseLink(license) {
       link = "https://opensource.org/licenses/Apache-2.0"
       break;
     case 'Boost Software License 1.0':
-      link = "https://www.boost.org/LICENSE_1_0.txt)"
+      link = "https://www.boost.org/LICENSE_1_0.txt"
       break;
     default:
       link = "";
@@ -66,7 +66,7 @@ function renderLicenseSection(license) {
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
 
-      ${renderLicenseLink(license)}
+  ${renderLicenseLink(license)}
 
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,

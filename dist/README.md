@@ -2,7 +2,7 @@
   # this
   ![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)  
   ## Description
-  this
+  ths
 
   ## Table of Contents
   * [Installation](#installation)
@@ -29,7 +29,7 @@
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
 
-      https://opensource.org/licenses/ISC
+  https://opensource.org/licenses/ISC
 
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
