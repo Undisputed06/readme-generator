@@ -62,7 +62,7 @@ const questions = [
         type: 'checkbox',
         name: 'license',
         message: 'Please enter a license for your application',
-        choices: ['N/A', 'MIT', 'ISC', 'Apache license 2.0', 'Academic Free License v3.0', 'Boost Software License 1.0']
+        choices: ['N/A', 'MIT', 'ISC', 'Apache license 2.0', 'Boost Software License 1.0']
       },
       {
         type: 'input',
@@ -110,12 +110,12 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions)
-  .then(answers =>{
-    console.log(answers);
-    return generateMarkdown(answers);
+  .then(data =>{
+    console.log(data);
+    return generateMarkdown(data);
   })
   .then(markDown => {
-    writeToFile('./Develop/dist/README.md', markDown)
+    writeToFile('./dist/README.md', markDown)
   })
   .catch(err => {
     console.log(err)
