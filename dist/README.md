@@ -1,8 +1,8 @@
 
-  # Professional README Generator
-    
+  # Example Project
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)  
   ## Description
-  This is a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.
+  This is where you will add your description
 
   ## Table of Contents
   * [Installation](#installation)
@@ -14,25 +14,38 @@
 
   
   ## Installation
-  In order to install the application, first clone the github repo to your machine. If node.js isn't installed, install it on your machine. From your command line, run the command "npm install" in order to download the necessary packages. Finally, run "node index" .  At this point, you will presented with a series of prompts to answer. The generated READme file will be added to the dist folder.
+  This is where you will add instruction text
 
   ## Usage 
-  User will be presented with a series of prompts to answer. The generated README will be added to the dist folder.
+  This is where you will add usage information
 
   ## License
-  N/A
+  MIT
 
   
+  ## License
+
+  Licensed under the MIT license;
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+  https://opensource.org/licenses/MIT
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
 
   ## Contributing
-  Please feel free to contribute to my project. To do so, fork the project to your local machine and create a pull request. 
+  This is where you will add contribution guidelines
 
   ## Tests
-  Run npm test
+  This is where you will add instructions
 
   ## Questions
-  [My Github Profile](https://github.com/Undisputed06)
+  [My Github Profile](https://github.com/YourUserName)
   
-  Please feel free to contact me at w_gwilliams@yahoo.com
+  Please feel free to contact me at YourUserName@email.com
 
 

@@ -18,10 +18,12 @@
   ## Usage 
   User will be presented with a series of prompts to answer. The generated README will be added to the dist folder.
 
+ 
   ## Screenshot of README.md
-  
-  
 
+  ![Screenshot of README](./Develop/utils/images/readme_screenshot.png)
+
+  
   ## Contributing
   Please feel free to contribute to my project. To do so, fork the project to your local machine and create a pull request. 
 
